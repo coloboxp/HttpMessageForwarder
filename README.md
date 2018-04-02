@@ -60,30 +60,33 @@ Features:
 # Example 2: Turn on ONKYO receiver on FM Tuner and set the volume to 20:
 ```json
 {
-    "endpoints": {
-        "host": "192.168.2.141",
-        "port": 60128,
-        "commands": [
-            {
-                "type": "onkyo",
-                "params": "24",
-                "content": "ascii",
-                "beforeDelay": 0,
-                "message": "SLI",
-                "afterDelay": 300,
-                "repeats": 10
-            },
-         {
-                "type": "onkyo",
-                "params": "20",
-                "content": "ascii",
-                "beforeDelay": 0,
-                "message": "MVL",
-                "afterDelay": 300,
-                "repeats": 10
-            }
-        ]
-    }
+    "endpoints": 
+    [
+      {
+          "host": "192.168.2.141",
+          "port": 60128,
+          "commands": [
+              {
+                  "type": "onkyo",
+                  "params": "24",
+                  "content": "ascii",
+                  "beforeDelay": 0,
+                  "message": "SLI",
+                  "afterDelay": 300,
+                  "repeats": 10
+              },
+              {
+                  "type": "onkyo",
+                  "params": "20",
+                  "content": "ascii",
+                  "beforeDelay": 0,
+                  "message": "MVL",
+                  "afterDelay": 300,
+                  "repeats": 10
+              }
+          ]
+      }
+   ]
 }
 ```
 # Example 3: Turn on ONKYO receiver on FM Tuner, set the volume to 20 and call an URL:
