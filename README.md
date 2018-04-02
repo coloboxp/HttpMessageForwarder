@@ -57,7 +57,7 @@ Features:
 }
 ```
 # Example 2: Turn on ONKYO receiver on FM Tuner and set the volume to 20:
-
+```json
 {
     "endpoints": {
         "host": "192.168.2.141",
@@ -84,10 +84,10 @@ Features:
         ]
     }
 }
-
+```
 # Example 3: Turn on ONKYO receiver on FM Tuner, set the volume to 20 and call an URL:
 # (That URL might be the one of a virtual switch on your zipato, or another HTTP endpoint)
-
+```json
 {
     "endpoints":
     [
@@ -132,5 +132,5 @@ Features:
         }
     ]
 }
-
+```
 Disclaimer: My experience on PHP is practically none, I've managed to assemble this with a couple fo searches on Google, however if you wish to contribute and make it more flexible, then the help is more than welcome!.
