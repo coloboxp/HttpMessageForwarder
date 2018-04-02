@@ -29,6 +29,9 @@ Features:
 1. Place the PHP file on your web server
 2. Be sure you can reach it from Zipato or a computer connected on the same network
 3. Adapt the sequence of "endpoints" to fit your needs.
+4. Send the JSON string as POST, with parameter name "qry".
+
+(Note: You can use [Postman](https://www.getpostman.com/) to debug your messages)
 
 # Example 1: Turn on ONKYO receiver on FM Tuner
 ```json
