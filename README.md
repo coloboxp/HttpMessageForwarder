@@ -33,7 +33,7 @@ Features:
 3.- Adapt the sequence of "endpoints" to fit your needs.
 
 # Example 1: Turn on ONKYO receiver on FM Tuner
-
+```json
 {
     "endpoints": 
     [
@@ -55,7 +55,7 @@ Features:
         }
      ]
 }
-
+```
 # Example 2: Turn on ONKYO receiver on FM Tuner and set the volume to 20:
 
 {
