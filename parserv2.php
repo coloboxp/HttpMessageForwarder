@@ -155,7 +155,7 @@
         $result = ob_get_clean();
     }
 
-    $command = $_POST['qry'];
+    $command = file_get_contents('php://input');
 
     $cmd = json_decode($command);
 

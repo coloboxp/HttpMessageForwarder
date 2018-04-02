@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "1128cc9f-deef-4bca-b71c-6474d4efac8e",
+		"name": "https",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/parserv2.php",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"endpoints\": \n    [\n        {\n            \"type\": \"socket\",\n            \"host\": \"192.168.2.141\",\n            \"port\": 60128,\n            \"commands\": [\n                {\n                    \"type\": \"onkyo\",\n                    \"params\": \"24\",\n                    \"content\": \"ascii\",\n                    \"beforeDelay\": 0,\n                    \"message\": \"SLI\",\n                    \"afterDelay\": 100,\n                    \"repeats\": 10\n                }\n            ]\n        },\n        {\n            \"type\": \"http\",\n            \"host\": \"localhost\",\n            \"port\": 8000,\n            \"path\": \"noexiste.php\",\n            \"method\": \"post\",\n            \"params\": [\n                { \"name\": \"p1\", \"value\": \"1\"},\n                { \"name\": \"p2\", \"value\": \"2\"},\n                { \"name\": \"p3\", \"value\": \"3\"}\n            ],\n            \"beforeDelay\": 0,\n            \"afterDelay\": 100,\n            \"repeats\": 10\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/parserv2.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"parserv2.php"
+					]
+				},
+				"description": "Sample"
+			},
+			"response": []
+		}
+	]
+}
