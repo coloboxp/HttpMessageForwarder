@@ -6,31 +6,29 @@ I've created this PHP page in order to circumvent one of the biggest limitations
 While doing it, I've added some features that allows to batch several commands to be sent, as well as setting other parameters on each of them.
 
 Features:
-- Stack one or many sequential messages to be sent.
-- Messages can have:
-  - Delay before sending the message in milliseconds
-  - Delay after sending the message in milliseconds
-  - Amount of times the message will be sent
+* Stack one or many sequential messages to be sent.
+* Messages can have:
+   * Delay before sending the message in milliseconds
+   * Delay after sending the message in milliseconds
+   * Amount of times the message will be sent
   
-  Message type "socket":
-    - Specify host address and port
-    - Onkyo: Send messages to Onkyo devices
-    - RAW:   Send raw TCP Messages
-      -ASCII: Sends the message as is
-      -HEX:   Sends Hexadecimal messages
-  Message type "http" or "https":
-    - Specify protocol: http or https
-    - Specify host and port
-    - Specify path ot the resource (ie, page.php or path/to/page.php)
-    - Method: GET, POST, PUT
-    - Params: List of parameter name and parameter value
-
-
+* Message type "socket":
+  * Specify host address and port   
+    * Onkyo: Send messages to Onkyo devices
+    * RAW:   Send raw TCP Messages
+      * ASCII: Sends the message as is
+      * HEX:   Sends Hexadecimal messages
+* Message type "http" or "https":
+  * Specify protocol: http or https
+    * Specify host and port
+    * Specify path ot the resource (ie, page.php or path/to/page.php)
+    * Method: GET, POST, PUT
+    * Params: List of parameter name and parameter value
 
 # Instructions
-1.- Place the PHP file on your web server
-2.- Be sure you can reach it from Zipato or a computer connected on the same network
-3.- Adapt the sequence of "endpoints" to fit your needs.
+1. Place the PHP file on your web server
+2. Be sure you can reach it from Zipato or a computer connected on the same network
+3. Adapt the sequence of "endpoints" to fit your needs.
 
 # Example 1: Turn on ONKYO receiver on FM Tuner
 ```json
@@ -86,7 +84,7 @@ Features:
 }
 ```
 # Example 3: Turn on ONKYO receiver on FM Tuner, set the volume to 20 and call an URL:
-# (That URL might be the one of a virtual switch on your zipato, or another HTTP endpoint)
+### (That URL might be the one of a virtual switch on your zipato, or another HTTP endpoint)
 ```json
 {
     "endpoints":
@@ -133,4 +131,4 @@ Features:
     ]
 }
 ```
-Disclaimer: My experience on PHP is practically none, I've managed to assemble this with a couple fo searches on Google, however if you wish to contribute and make it more flexible, then the help is more than welcome!.
+*Disclaimer*: My experience on PHP is practically none, I've managed to assemble this with a couple fo searches on Google, however if you wish to contribute and make it more flexible, then the help is more than welcome!.
